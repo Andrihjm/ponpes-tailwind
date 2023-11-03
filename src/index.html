@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth"> 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +19,21 @@
                             <!-- NAVBAR -->
 
    <nav class="navbar fixed w-full z-10">
-        <div class="lg:flex lg:justify-between lg:items-center md:w-4/5 md:m-auto p-4 px-4 text-teal-500 bg-slate-50 border-b-2">
-            <div class="block flex justify-between text-3xl lg:text-5xl">
-                <img src="../img/LOGO SD AL-MUJTAHIDIN 1.png" alt="" class="w-10 md:w-14 lg:w-20">
-                <i id="button" class="fa-solid fa-bars cursor-pointer"></i>
+        <div class="md:flex md:justify-between md:items-center md:m-auto p-4 px-4 text-teal-500 bg-slate-50 border-b-2">
+            <div class="flex justify-between text-3xl lg:text-5xl">
+                <img src="../img/LOGO SD AL-MUJTAHIDIN 1.png" alt="" class="w-12 lg:w-16">
+                <span class="md:hidden"><i id="button" class="fa-solid fa-bars cursor-pointer p-1"></i></span>
             </div>
 
-            <div class="menu text-slate-800 absolute top-full right-[-100%] w-3/5 h-screen bg-cyan-500 duration-700">
+            <div class="text-xl font-medium text-teal-500 hidden md:flex ">
+                <a href="#Home" class="mr-4 hover:text-slate-500">Home</a>
+                <a href="#Misi" class="mr-4 hover:text-slate-500">Misi</a>
+                <a href="#Kami" class="mr-4 hover:text-slate-500">Kenapa kami</a>
+                <a href="#Biaya" class="mr-4 hover:text-slate-500">Biaya</a>
+                <a href="#Kegiatan" class="mr-4 hover:text-slate-500">Kegiatan</a>
+            </div>
+
+            <div class="menu text-slate-800 absolute top-full right-[-100%] w-3/5 h-screen bg-teal-500 duration-700">
                 <a href="#Home">Home</a>
                 <a href="#Misi">Misi</a>
                 <a href="#Kami">Kenapa kami</a>
@@ -37,24 +45,24 @@
     </nav>
     
     
-    <!-- HERO -->
-    
-    <section id="Home" class="lg:h-screen flex">
-        <div class="flex flex-wrap px-4 pt-16 md:w-4/5 m-auto relative">
+                                             <!-- HERO -->
+
+    <section id="Home" class="flex">
+        <div class="flex flex-wrap px-4 m-auto relative">
             <div class="lg:w-3/5">
-                <h1 class="font-bold text-4xl mb-3 text-slate-800 md:text-5xl">
+                <h1 class="font-bold text-4xl mb-4 text-slate-800 md:text-5xl lg:text-6xl">
                     <br>Unggul 
                     <br>Berprestasi Tinggi 
                     <br>Berakhlak Terpuji
                 </h1>
-                <p class="text-slate-500 mb-2 lg:w-11/12">Lorem ipsum dolor sit amet consectetur <span class="font-bold text-slate-700">adipisicing elit. Doloremque tenetur natus ipsum, facilis quasi asperiores unde eius</span> numquam repellendus. Quae tenetur harum vel sunt dolore placeat sapiente a veniam velit.</p>
-                <!-- BUTTON -->
+                <p class="text-slate-500 mb-4 lg:w-11/12">Lorem ipsum dolor sit amet consectetur <span class="font-bold text-slate-700">adipisicing elit. Doloremque tenetur natus ipsum, facilis quasi asperiores unde eius</span> numquam repellendus. Quae tenetur harum vel sunt dolore placeat sapiente a veniam velit.</p>
+     <!-- BUTTON -->
                 <button type="button" class="hidden lg:block py-1 px-10 font-semibold text-slate-50 bg-teal-500 rounded-2xl mb-8 hover:opacity-80 duration-300 transition ease-in-out">SUBMIT</button>
             </div>
             
-            <div class="lg:w-2/5 lg:pt-20">
+            <div class="lg:w-2/5 lg:pt-20 text-center">
                 <img src="../img/r.jpg" alt="" class="rounded-2xl mb-3 w-full m-auto">
-                <button type="button" class="lg:hidden py-1 px-10 font-semibold text-slate-50 bg-teal-500 rounded-2xl mb-8 hover:opacity-80 duration-300 transition ease-in-out">SUBMIT</button>
+                <button type="button" class="lg:hidden py-1 px-10 font-semibold text-slate-50 bg-teal-500 rounded-2xl hover:opacity-80 transition duration-300 ease-in-out">SUBMIT</button>
             </div>
             
 <!-- CLOCK -->
@@ -65,10 +73,10 @@
                             
                             <!-- ABOUT -->
                             
-    <section id="About" class="md:w-4/5 m-auto bg-fnt text-slate-500">
-        <div class="flex flex-wrap justify-between items-center py-20 px-8 lg:w-[95%] m-auto">
+    <section id="About" class="bg-fnt text-slate-500">
+        <div class="flex flex-wrap justify-between items-center px-5">
             <div class="mb-8 lg:w-limapoloh">
-                <h1 class="capitalize text-teal-500 font-bold text-4xl">tentang saya</h1>
+                <h1 class="capitalize text-teal-500 font-bold text-4xl">tentang kami</h1>
                 <h2 class="capitalize font-semibold mb-4">hadfhafjl & <span class="font-bold text-slate-700">adshf fdldfsaf</span></h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptates? <span class="font-bold text-slate-700"> Lorem, ipsum dolor sit amet consectetur adipisicing</span>recusanda lias labore coperferendis mollitia ipsa placeat.</p>
             </div>
@@ -100,18 +108,19 @@
 
 
                             <!-- RATING -->
-    <section class="text-center text-slate-500 md:w-4/5 m-auto lg:w-3/5">
-        <div class="md:w-1/2 m-auto mb-5">
-            <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-5">Sekolahan Saya</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt itaque molestiae alias corrupti ipsa necessitatibus earum vel quas impedit sunt?</p>
+    <section class="text-center text-slate-500 lg:w-3/4 m-auto">
+        <div class="md:w-3/4 m-auto mb-5">
+            <h1 class="text-4xl lg:text-5xl font-bold text-slate-900 mb-5">Sekolahan <span class="text-teal-500">Saya</span></h1>
+            <p>Lorem ipsum dolor sit amet <span class="font-bold text-slate-700">consectetur adipisicing elit. Nesciunt itaque</span> molestiae alias corrupti ipsa necessitatibus earum vel quas impedit sunt?</p>
         </div>
 
-            <div class="flex justify-between w-[80%]">
+        <div class="felx px-4">
+            <div class="flex justify-between w-[90%]">
                 <h1 class="text-lg">Sepak Bola</h1>
                 <h5>90%</h5>
             </div>
             <div class="w-full h-4 bg-slate-500 rounded mb-4">
-                <div class="w-[80%] h-4 bg-teal-500 rounded"></div>
+                <div class="w-[88%] h-4 bg-teal-500 rounded"></div>
             </div>
 
             <div class="flex justify-between w-[82%]">
@@ -119,15 +128,15 @@
                 <h5>82%</h5>
             </div>
             <div class="w-full h-4 bg-slate-500 rounded mb-4">
-                <div class="w-[82%] h-4 bg-teal-500 rounded"></div>
+                <div class="w-[80%] h-4 bg-teal-500 rounded"></div>
             </div>
 
-             <div class="flex justify-between w-[50%]">
+             <div class="flex justify-between w-[76%]">
                 <h1 class="text-lg">Pramuka</h1>
-                <h5>50%</h5>
+                <h5>76%</h5>
             </div>
             <div class="w-full h-4 bg-slate-500 rounded mb-4">
-                <div class="w-[50%] h-4 bg-teal-500 rounded"></div>
+                <div class="w-[74%] h-4 bg-teal-500 rounded"></div>
             </div>
 
              <div class="flex justify-between w-[60%]">
@@ -135,7 +144,7 @@
                 <h5>60%</h5>
             </div>
             <div class="w-full h-4 bg-slate-500 rounded mb-4">
-                <div class="w-[60%] h-4 bg-teal-500 rounded"></div>
+                <div class="w-[58%] h-4 bg-teal-500 rounded"></div>
             </div>
 
              <div class="flex justify-between w-[78%]">
@@ -143,45 +152,46 @@
                 <h5>78%</h5>
             </div>
             <div class="w-full h-4 bg-slate-500 rounded mb-4">
-                <div class="w-[78%] h-4 bg-teal-500 rounded"></div>
+                <div class="w-[76%] h-4 bg-teal-500 rounded"></div>
             </div>
+        </div>    
     </section>                            
     
 
                             <!-- MISI -->
-    <section id="Misi" class="py-20">
+    <section id="Misi">
         <article class="text-center text-4xl font-bold text-slate-800 mb-8 lg:text-5xl">
-            <h1>Misi Kami</h1>
+            <h1>Misi <span class="text-teal-500">Kami</span></h1>
         </article>
             <div class="flex flex-wrap px-4 justify-center text-slate-700 md:w-11/12 gap-7 m-auto">
                 
-                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-teal-100 group hover:bg-teal-500 hover:text-slate-50 transition-all">
-                    <div class="w-6 h-6 rounded-full bg-teal-400 group-hover:bg-slate-50"></div>
+                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-teal-100 group hover:bg-teal-500 hover:text-slate-50 transition-all duration-500">
+                    <div class="w-6 h-6 rounded-full bg-teal-400 group-hover:bg-slate-50 duration-500"></div>
                     <p>Terwujudnya lulusan yang memiliki kemantapan aqidah solihah,keluasan ilmu pengetahuan,berakhlak mulia dan terampil</p>
                 </div>
 
-                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-orange-100 group hover:bg-orange-500 hover:text-slate-50 transition-all">
-                    <div class="w-6 h-6 rounded-full bg-orange-300 group-hover:bg-slate-50"></div>
+                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-orange-100 group hover:bg-orange-500 hover:text-slate-50 transition-all duration-500">
+                    <div class="w-6 h-6 rounded-full bg-orange-300 group-hover:bg-slate-50 duration-500"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  possimus dolore asperiores!</p>
                 </div>
 
-                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-teal-100 group hover:bg-teal-500 hover:text-slate-50 transition-all">
-                    <div class="w-6 h-6 rounded-full bg-teal-300 group-hover:bg-slate-50"></div>
+                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-teal-100 group hover:bg-teal-500 hover:text-slate-50 transition-all duration-500">
+                    <div class="w-6 h-6 rounded-full bg-teal-300 group-hover:bg-slate-50 duration-500"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  possimus dolore asperiores!</p>
                 </div>
 
-                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-orange-100 group hover:bg-orange-500 hover:text-slate-50 transition-all">
-                    <div class="w-6 h-6 rounded-full bg-orange-300 group-hover:bg-slate-50"></div>
+                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-orange-100 group hover:bg-orange-500 hover:text-slate-50 transition-all duration-500">
+                    <div class="w-6 h-6 rounded-full bg-orange-300 group-hover:bg-slate-50 duration-500"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique incidunt magni qui labore hic soluta possimus dolore asperiores!</p>
                 </div>
 
-                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-teal-100 group hover:bg-teal-500 hover:text-slate-50 transition-all">
-                    <div class="w-6 h-6 rounded-full bg-teal-300 group-hover:bg-slate-50"></div>
+                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-teal-100 group hover:bg-teal-500 hover:text-slate-50 transition-all duration-500">
+                    <div class="w-6 h-6 rounded-full bg-teal-300 group-hover:bg-slate-50 duration-500"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  periores!</p>
                 </div>
 
-                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-orange-100 group hover:bg-orange-500 hover:text-slate-50 transition-all">
-                    <div class="w-6 h-6 rounded-full bg-orange-300 group-hover:bg-slate-50"></div>
+                <div class="w-full md:w-96 p-4 rounded-xl shadow-lg bg-orange-100 group hover:bg-orange-500 hover:text-slate-50 transition-all duration-500">
+                    <div class="w-6 h-6 rounded-full bg-orange-300 group-hover:bg-slate-50 duration-500"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. iores!</p>
                 </div>
         </div>
@@ -189,20 +199,20 @@
     
     
                             <!-- WADAH PENDIDIKAN -->
-    <section class="m-auto py-20 text-slate-800">
+    <section class="text-slate-800">
         <div class="text-center">
-            <h1 class="font-bold text-4xl mb-5 lg:text-5xl">Wadah Pendidikan</h1>
-            <p class="mb-5 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, pariatur.</p>
+            <h1 class="font-bold text-4xl lg:text-5xl"><span class="text-teal-500">Wadah</span> Pendidikan</h1>
+            <p class="mb-8">Lorem ipsum dolor sit amet <span class="text-slate-500 font-semibold">consectetur adipisicing elit.</span> Excepturi, pariatur.</p>
         </div>
 
-        <div class="w-3/4 m-auto lg:flex gap-8 px-4">
-            <div class="bg-teal-100 p-4 rounded-xl group shadow-lg hover:bg-teal-500 hover:text-slate-50 mb-8">
-                <h1 class="font-bold text-xl text-teal-500 group-hover:text-slate-50">Pondok Putra</h1>
+        <div class="m-auto md:w-3/4 lg:flex gap-8 w-11/12">
+            <div class="bg-teal-100 p-4 rounded-xl group shadow-lg hover:bg-teal-500 hover:text-slate-50 duration-500 mb-8">
+                <h1 class="font-bold text-xl text-teal-500 group-hover:text-slate-50 duration-500">Pondok Putra</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates nihil</p>
             </div>
 
-            <div class="bg-red-100 p-4 rounded-xl shadow-lg group hover:bg-orange-500 hover:text-slate-50 mb-8">
-                <h1 class="font-bold text-xl text-orange-500 group-hover:text-teal-50">Pondok Putri</h1>
+            <div class="bg-red-100 p-4 rounded-xl shadow-lg group hover:bg-orange-500 hover:text-slate-50 mb-8 duration-500">
+                <h1 class="font-bold text-xl text-orange-500 group-hover:text-teal-50 duration-500">Pondok Putri</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut voluptates nihil</p>
             </div>
         </div>
@@ -210,9 +220,9 @@
 
 
                                     <!-- TENAGA PENGAJAR -->
-    <section class="py-20 text-slate-800">
+    <section class="text-slate-800">
         <article class="text-center text-4xl font-bold text-slate-800 mb-8 lg:text-5xl">
-            <h1>Tenaga Pengajar</h1>
+            <h1>Tenaga <span class="text-teal-500">Pengajar</span></h1>
         </article>
 
             <div class="text-center px-4 md:w-11/12 md:flex md:justify-center md:gap-28 ld:w-1/2 m-auto">
@@ -264,9 +274,9 @@
 
 
 
-                                        <!-- PIKT PENDIDIKAN -->
+                                        <!-- PAKET PENDIDIKAN -->
 
-    <section id="Biaya" class="md:w-4/5 m-auto bg-teal-300 text-slate-900 py-20">
+    <section id="Biaya" class="m-auto rounded-lg bg-teal-300 text-slate-900 py-20">
         <article class="text-center text-4xl font-bold text-slate-800 mb-8 lg:text-5xl">
             <h1>Paket Pendidikan</h1>
         </article>
@@ -313,7 +323,7 @@
 
 
                                                 <!-- PROGRAM EKSKUL -->
-    <section id="Kami" class="md:w-4/5 py-20 m-auto">
+    <section id="Kami" class="lg:w-3/4 m-auto">
         <article class="text-center text-4xl font-bold text-slate-800 mb-8">
             <h1>Program Pendidikan</h1>
         </article>
@@ -344,17 +354,17 @@
 
 
                                             <!-- KEGIATAN SANTRI -->
-    <section id="Kegiatan" class="md:w-4/5 m-auto py-20">
+    <section id="Kegiatan" class="">
         <article class="text-center text-4xl lg:text-5xl font-bold text-slate-800 mb-8">
-            <h1>Kegiatan Santri</h1>
+            <h1>Kegiatan <span class="text-teal-500">Santri</span></h1>
         </article>
 
-            <div class="flex flex-wrap group lg:gap-5">
-                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-3 transition-all">
-                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-6 transition-all">
-                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-6 transition-all">
-                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-3 transition-all">
-                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-3 transition-all">
+            <div class="grid lg:grid-cols-3 gap-4 group">
+                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-3 transition-all duration-500">
+                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-6 transition-all duration-500">
+                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-6 transition-all duration-500">
+                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-3 transition-all duration-500">
+                <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto scale-[.9] group-hover:scale-100 group-hover:lg:rotate-3 transition-all duration-500">
             </div>
     </section> 
     
@@ -362,7 +372,7 @@
 
                                                 <!-- FASILITAS -->
 
-    <section class="md:w-4/5 m-auto py-20">
+    <section class="m-auto py-20">
         <article class="text-center text-4xl lg:text-5xl font-bold text-slate-800 mb-8">
             <h1>Fasilitas</h1>
         </article>
@@ -370,27 +380,27 @@
             <div class="p-4 flex flex-wrap justify-center gap-5 md:gap-16">
                 <div class="text-center">
                     <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto">
-                    <h5>Gedung asrama</h5>
+                    <h5>Apa aja terserah anda</h5>
                 </div>
 
                 <div class="text-center">
                     <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto">
-                    <h5>Gedung asrama</h5>
+                    <h5>Apa aja terserah anda</h5>
                 </div>
 
                 <div class="text-center">
                     <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto">
-                    <h5>Gedung asrama</h5>
+                    <h5>Apa aja terserah anda</h5>
                 </div>
 
                 <div class="text-center">
                     <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto">
-                    <h5>Gedung asrama</h5>
+                    <h5>Apa aja terserah anda</h5>
                 </div>
 
                 <div class="text-center">
                     <img src="../img/r.jpg" alt="" class="rounded-xl lg:max-w-md w-full m-auto">
-                    <h5>Gedung asrama</h5>
+                    <h5>Apa aja terserah anda</h5>
                 </div>
             </div>
     </section> 
@@ -398,11 +408,13 @@
     
 
                                             <!-- END -->
-    <section class="grid place-items-center py-8 bg-teal-500">
-        <a href="https://keweb.site/" target="_blank">
-            <img src="../img/keweb-site-logo.svg" alt="" class="h-14 object-cover">
-        </a>
-    </section>
+    <footer>
+        <div class="grid place-items-center p-10 bg-teal-500">
+            <a href="https://keweb.site/" target="_blank">
+                <img src="../img/keweb-site-logo.svg" alt="" class="h-10 object-cover">
+            </a>
+        </div>
+    </footer>
 
     
 
